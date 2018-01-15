@@ -2,6 +2,11 @@
   publish = "public"
   command = "echo 'hello!' && hugo"
 
+[context.production.environment]
+  HUGO_VERSION = "0.32.1"
+  HUGO_ENV = "production"
+  HUGO_ENABLEGITINFO = "true"
+
 [context.next.environment]
   HUGO_BASEURL = "https://zen-babbage-bb1ef6.netlify.com/"
   HUGO_ENABLEGITINFO = "true"
