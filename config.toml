@@ -1,4 +1,5 @@
 title = "Minimo"
+baseURL = "https://zen-babbage-bb1ef6.netlify.com/"
 # for smart copyright line, leave this blank and check [params.copyright]
 copyright = ""
 
