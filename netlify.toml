@@ -1,6 +1,6 @@
 [build]
   publish = "public"
-  command = "echo 'hello!' && pwd && ls -la && curl -LJO https://github.com/amaurycatelan/hugo/releases/download/v0.17.1/hugo_0.17.1_linux-64bit.tar.gz && tar -zxvf hugo_0.17.1_linux-64bit.tar.gz && ls -la && mv hugo_0.17.1_linux-64bit/hugo ./hugo1 && rm -rf hugo_0.17.1_linux-64bit && rm hugo_0.17.1_linux-64bit.tar.gz && ls -la && chmod +x ./hugo1 && ./hugo1"
+  command = "echo 'hello!' && pwd && ls -la && curl -LJO https://github.com/amaurycatelan/hugo/releases/download/v0.17.1/hugo_0.17.1_linux-64bit.tar.gz && tar -zxvf hugo_0.17.1_linux-64bit.tar.gz && ls -la && mv hugo_0.17.1_linux-64bit/hugo ./hugo1 && rm -rf hugo_0.17.1_linux-64bit && rm hugo_0.17.1_linux-64bit.tar.gz && ls -la && chmod +x hugo1 && hugo1"
 
 [context.production.environment]
   HUGO_VERSION = "0.32.1"
