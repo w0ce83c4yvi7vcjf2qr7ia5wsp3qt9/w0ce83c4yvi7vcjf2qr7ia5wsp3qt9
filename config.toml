@@ -2,6 +2,7 @@ title = "Minimo"
 # for smart copyright line, leave this blank and check [params.copyright]
 copyright = ""
 
+disableHugoGeneratorInject = true
 disqusShortname = ""
 googleAnalytics = ""
 
