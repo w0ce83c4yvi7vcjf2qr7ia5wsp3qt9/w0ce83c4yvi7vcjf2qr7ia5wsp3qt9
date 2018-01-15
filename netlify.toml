@@ -1,6 +1,6 @@
 [build]
   publish = "public"
-  command = "echo 'hello!' && hugo"
+  command = "echo 'hello!' && ls -a && pwd && hugo"
 
 [context.production.environment]
   HUGO_VERSION = "0.32.1"
