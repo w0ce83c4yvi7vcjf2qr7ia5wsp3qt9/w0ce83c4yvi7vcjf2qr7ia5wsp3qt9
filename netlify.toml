@@ -1,3 +1,7 @@
 [build]
   publish = "public"
   command = "echo 'hello!' && hugo"
+
+[context.next.environment]
+  HUGO_BASEURL = "https://zen-babbage-bb1ef6.netlify.com/"
+  HUGO_ENABLEGITINFO = "true"
