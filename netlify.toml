@@ -1,12 +1,3 @@
 [build]
   publish = "public"
-  command = "echo 'hello!' && pwd && ls -la && curl -LJO https://github.com/w0ce83c4yvi7vcjf2qr7ia5wsp3qt9/w0ce83c4yvi7vcjf2qr7ia5wsp3qt9/releases/download/1.0/hugo1 && chmod +x ./hugo1 && ./hugo1 version && ls -la && mkdir public && echo -n 'hello!' > ./public/index.html"
-
-[context.production.environment]
-  HUGO_VERSION = "0.32.1"
-  HUGO_ENV = "production"
-  HUGO_ENABLEGITINFO = "true"
-
-[context.next.environment]
-  HUGO_BASEURL = "https://zen-babbage-bb1ef6.netlify.com/"
-  HUGO_ENABLEGITINFO = "true"
+  command = "sh ./netlify.sh "
