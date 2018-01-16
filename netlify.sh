@@ -11,4 +11,4 @@ chmod +x ./${HUGO_BINARY}/hugo
 
 ./${HUGO_BINARY}/hugo version
 
-mkdir public && echo -n 'hello 2!' > ./public/index.html
+mkdir public && echo -n 'hello 3!' > ./public/index.html
