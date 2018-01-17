@@ -19,10 +19,10 @@ HUGO_TARBALL=${HUGO_BINARY}.tar.gz
 
 if [ ! -f ./node_modules/hugo-backpack/bin/${HUGO_BINARY}/hugo ]; then
   echo "A. File not found!"
-  tar -zxvf ./node_modules/hugo-backpack/bin/${HUGO_TARBALL}
-  chmod +x ./node_modules/hugo-backpack/bin/${HUGO_BINARY}/hugo
+  tar -zxvf ./node_modules/hugo-backpack/bin/${HUGO_TARBALL} && chmod +x ./node_modules/hugo-backpack/bin/${HUGO_BINARY}/hugo
 fi
 
+chmod +x ./node_modules/hugo-backpack/bin/${HUGO_BINARY}/hugo
 ./node_modules/hugo-backpack/bin/${HUGO_BINARY}/hugo version
 
 mkdir public && echo -n 'hello 9!' > ./public/index.html
