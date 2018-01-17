@@ -17,6 +17,12 @@ HUGO_TARBALL=${HUGO_BINARY}.tar.gz
 # make run
 # ./${HUGO_BINARY}/hugo version
 
-ls ./node_modules/hugo-backpack/
+if [ ! -f ./node_modules/hugo-backpack/bin/${HUGO_BINARY}/hugo ]; then
+  echo "A. File not found!"
+  tar -zxvf ./node_modules/hugo-backpack/bin/${HUGO_TARBALL}
+  chmod +x ./node_modules/hugo-backpack/bin/${HUGO_BINARY}/hugo
+fi
 
-mkdir public && echo -n 'hello 8!' > ./public/index.html
+./node_modules/hugo-backpack/bin/${HUGO_BINARY}/hugo version
+
+mkdir public && echo -n 'hello 9!' > ./public/index.html
