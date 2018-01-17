@@ -5,10 +5,6 @@
   "title": "Project",
   "private": true,
   "dependencies": {
-    "hugo-backpack": "^0.17.1",
-  },
-  "engines": {
-    "node": ">=4.2.2",
-    "npm": ">=2.14.7"
+    "hugo-backpack": "^0.17.1"
   }
 }
