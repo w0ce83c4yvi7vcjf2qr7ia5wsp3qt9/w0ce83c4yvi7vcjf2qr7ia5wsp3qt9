@@ -4,6 +4,11 @@
 HUGO_VERSION=0.17.1
 HUGO_BINARY=hugo_${HUGO_VERSION}_linux-64bit
 HUGO_TARBALL=${HUGO_BINARY}.tar.gz
+HUGO_PACKAGE=./node_modules/hugo-backpack/bin
+HUGO_PATH=${HUGO_PACKAGE}/${HUGO_BINARY}
+
+# OPTION A
+# --------------------------
 
 # 1
 # curl -sL https://github.com/amaurycatelan/hugo/releases/download/v0.17.1/hugo_0.17.1_linux-64bit.tar.gz | tar xz
@@ -17,14 +22,17 @@ HUGO_TARBALL=${HUGO_BINARY}.tar.gz
 # make run
 # ./${HUGO_BINARY}/hugo version
 
-if [ ! -f ./node_modules/hugo-backpack/bin/${HUGO_BINARY}/hugo ]; then
-  echo "A. File not found!"
-  tar -zxvf ./node_modules/hugo-backpack/bin/${HUGO_TARBALL} -C ./node_modules/hugo-backpack/bin/
-  chmod +x ./node_modules/hugo-backpack/bin/${HUGO_BINARY}/hugo
+# OPTION B
+# --------------------------
+
+if [ ! -f ${HUGO_PATH}/hugo ]; then
+  tar -zxvf ${HUGO_PACKAGE}/${HUGO_TARBALL} -C ${HUGO_PACKAGE}/
+  chmod +x ${HUGO_PATH}/hugo
 fi
 
-./node_modules/hugo-backpack/bin/${HUGO_BINARY}/hugo version
+${HUGO_PATH}/hugo version
+# ls -la
 
-ls -la
+mkdir public && echo -n 'hello 12!' > ./public/index.html
 
-mkdir public && echo -n 'hello 11!' > ./public/index.html
+
