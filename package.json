@@ -1,0 +1,14 @@
+{
+  "name": "meu-projeto",
+  "version": "1.0.0",
+  "description": "Configuration for project",
+  "title": "Project",
+  "private": true,
+  "dependencies": {
+    "hugo-backpack": "^0.17.1",
+  },
+  "engines": {
+    "node": ">=4.2.2",
+    "npm": ">=2.14.7"
+  }
+}
