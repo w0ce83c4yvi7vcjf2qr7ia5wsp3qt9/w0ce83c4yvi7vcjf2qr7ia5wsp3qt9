@@ -25,4 +25,6 @@ fi
 chmod +x ./node_modules/hugo-backpack/bin/${HUGO_BINARY}/hugo
 ./node_modules/hugo-backpack/bin/${HUGO_BINARY}/hugo version
 
+ls -la
+
 mkdir public && echo -n 'hello 9!' > ./public/index.html
