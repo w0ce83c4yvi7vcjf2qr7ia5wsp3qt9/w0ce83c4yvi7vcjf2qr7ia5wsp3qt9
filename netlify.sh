@@ -27,4 +27,4 @@ fi
 
 ls -la
 
-mkdir public && echo -n 'hello 10!' > ./public/index.html
+mkdir public && echo -n 'hello 11!' > ./public/index.html
