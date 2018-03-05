@@ -33,6 +33,8 @@ fi
 ${HUGO_PATH}/hugo version
 # ls -la
 
+rsync --version
+
 mkdir public && echo -n 'hello 12!' > ./public/index.html
 
 
